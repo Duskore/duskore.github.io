@@ -1,0 +1,14 @@
+{
+  "name": "duskore-website",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/build.mjs --check",
+    "test": "node --test",
+    "verify:live": "node scripts/verify-live.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
