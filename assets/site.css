@@ -974,3 +974,7 @@ h2 {
     transform: none;
   }
 }
+.game-document { max-width: 780px; margin: 3rem auto 5rem; overflow-wrap: anywhere; }
+.game-document h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
+.game-document h2 { margin-top: 2rem; font-size: 1.35rem; }
+.game-document p { font-size: 1rem; line-height: 1.8; white-space: pre-line; }

@@ -212,9 +212,25 @@ export function validateCatalog(catalog, root = ROOT) {
       );
     } else {
       assert(
-        !game.appStoreUrl && !game.supportUrl && !game.privacyUrl,
+        !game.appStoreUrl,
         `Unreleased game must not advertise release links: ${game.slug}`,
       );
+      assert(
+        (!game.supportUrl && !game.privacyUrl) ||
+          (validUrl(game.supportUrl) && validUrl(game.privacyUrl) && game.documents),
+        `Development support links need published documents: ${game.slug}`,
+      );
+    }
+    if (game.documents) {
+      for (const type of ["support", "privacy"]) {
+        assert(game[`${type}Url`] === `/games/${game.slug}/${type}/`, `Document route mismatch: ${game.slug}`);
+        for (const locale of LOCALES) {
+          const sections = game.documents[type]?.[locale];
+          assert(Array.isArray(sections) && sections.length > 0 && sections.every(s =>
+            typeof s.heading === "string" && s.heading.trim() && typeof s.body === "string" && s.body.trim()),
+          `Missing document sections: ${game.slug}/${type}/${locale}`);
+        }
+      }
     }
   }
   assert(
@@ -337,11 +353,11 @@ function detail(locale, game, catalog) {
     <a class="back-link" href="${route(locale)}#games"><span aria-hidden="true">← </span>${t.allGames}</a>
     <section class="detail-hero" aria-labelledby="game-title">
       <div class="detail-copy">${status(locale, game)}<p class="eyebrow">${e(c.genre)}</p><h1 id="game-title">${e(c.name)}</h1><p class="tagline">${e(c.tagline)}</p><p class="hero-description">${e(c.description)}</p>
-        ${game.status === "available" ? `<a class="button" href="${e(game.appStoreUrl)}">${t.appStore}<span aria-hidden="true"> ↗</span></a><p class="fine-print">${t.regional}</p>` : `<div class="development-note"><p>${t.pending}</p><p>${t.pendingLinks}</p></div>`}
+        ${game.status === "available" ? `<a class="button" href="${e(game.appStoreUrl)}">${t.appStore}<span aria-hidden="true"> ↗</span></a><p class="fine-print">${t.regional}</p>` : `<div class="development-note"><p>${t.pending}</p>${game.documents ? "" : `<p>${t.pendingLinks}</p>`}</div>`}
       </div><div class="detail-art accent-${game.accent}">${icon(game, { large: true, eager: true })}</div>
     </section>
     <section class="game-story" aria-labelledby="details-title"><div><p class="eyebrow">${t.howItFeels}</p><h2 id="details-title">${t.details}</h2><p>${e(c.body)}</p></div><ul class="features">${c.features.map((f, i) => `<li><span aria-hidden="true">0${i + 1}</span>${e(f)}</li>`).join("")}</ul></section>
-    ${game.status === "available" ? `<section class="support-strip"><div><h2>${t.supportPrompt}</h2><p>${t.supportIntro}</p></div><div class="inline-links"><a href="${e(game.supportUrl)}">${t.gameSupport}<span aria-hidden="true"> ↗</span></a><a href="${e(game.privacyUrl)}">${t.gamePrivacy}<span aria-hidden="true"> ↗</span></a></div></section>` : ""}
+    ${game.supportUrl && game.privacyUrl ? `<section class="support-strip"><div><h2>${t.supportPrompt}</h2><p>${t.supportIntro}</p></div><div class="inline-links"><a href="${e(documentUrl(locale, game, "support"))}">${t.gameSupport}<span aria-hidden="true"> ↗</span></a><a href="${e(documentUrl(locale, game, "privacy"))}">${t.gamePrivacy}<span aria-hidden="true"> ↗</span></a></div></section>` : ""}
     <section class="related" aria-labelledby="more-title"><h2 id="more-title">${t.moreGames}</h2><div class="game-grid related-grid">${catalog.games
       .filter((g) => g.slug !== game.slug)
       .map((g) => card(locale, g))
@@ -363,10 +379,24 @@ function directory(locale, type, catalog) {
     description,
     `
     <section class="directory-intro"><p class="eyebrow">DUSKORE / ${type.toUpperCase()}</p><h1>${title}</h1><p class="hero-description">${description}</p></section>
-    <div class="directory-list">${catalog.games.map((game) => `<article class="directory-item">${icon(game)}<div><h2><a href="${gameRoute(locale, game)}">${e(game[locale].name)}</a></h2>${status(locale, game)}${game[property] ? "" : `<p>${t.directoryPending}</p>`}</div>${game[property] ? `<a class="button button-outline" href="${e(game[property])}">${type === "support" ? t.gameSupport : t.gamePrivacy}<span aria-hidden="true"> ↗</span></a>` : ""}</article>`).join("\n")}</div>
+    <div class="directory-list">${catalog.games.map((game) => `<article class="directory-item">${icon(game)}<div><h2><a href="${gameRoute(locale, game)}">${e(game[locale].name)}</a></h2>${status(locale, game)}${game[property] ? "" : `<p>${t.directoryPending}</p>`}</div>${game[property] ? `<a class="button button-outline" href="${e(documentUrl(locale, game, type))}">${type === "support" ? t.gameSupport : t.gamePrivacy}<span aria-hidden="true"> ↗</span></a>` : ""}</article>`).join("\n")}</div>
     <p class="fine-print directory-note">${t.legacyNote}</p>
   `,
   );
+}
+
+function documentUrl(locale, game, type) {
+  return game.documents ? route(locale, `games/${game.slug}/${type}/`) : game[`${type}Url`];
+}
+
+function gameDocument(locale, game, type) {
+  const title = `${game[locale].name} — ${type === "support" ? text[locale].gameSupport : text[locale].gamePrivacy}`;
+  const sections = game.documents[type][locale];
+  return layout(locale, `games/${game.slug}/${type}/`, title, sections[0].body,
+    `<article class="game-document"><a class="back-link" href="${gameRoute(locale, game)}">← ${e(game[locale].name)}</a><h1>${e(title)}</h1>
+    ${sections.map(s => `<section><h2>${e(s.heading)}</h2><p>${e(s.body)}</p></section>`).join("\n")}
+    <p><a href="https://github.com/Duskore/duskore.github.io/issues/new?title=${encodeURIComponent(game.en.name + ': support request')}">${locale === "ko" ? "지원 문의 (공개 GitHub 이슈)" : "Contact support (public GitHub issue)"}</a></p>
+    <p><a href="${documentUrl(locale, game, type === "support" ? "privacy" : "support")}">${type === "support" ? text[locale].gamePrivacy : text[locale].gameSupport}</a></p></article>`);
 }
 
 export function renderSite(catalog) {
@@ -374,11 +404,14 @@ export function renderSite(catalog) {
   for (const locale of LOCALES) {
     const prefix = locale === "ko" ? "ko/" : "";
     pages.set(`${prefix}index.html`, home(locale, catalog));
-    for (const game of catalog.games)
+    for (const game of catalog.games) {
       pages.set(
         `${prefix}games/${game.slug}/index.html`,
         detail(locale, game, catalog),
       );
+      if (game.documents) for (const type of ["support", "privacy"])
+        pages.set(`${prefix}games/${game.slug}/${type}/index.html`, gameDocument(locale, game, type));
+    }
     for (const type of ["support", "privacy"])
       pages.set(
         `${prefix}${type}/index.html`,
@@ -413,7 +446,7 @@ export function renderSite(catalog) {
 }
 
 export function isOwnedOutput(file) {
-  return /^(?:(?:ko\/)?(?:(?:games\/[a-z0-9]+(?:-[a-z0-9]+)*|support|privacy)\/)?index\.html|404\.html|sitemap\.xml|robots\.txt)$/.test(
+  return /^(?:(?:ko\/)?(?:(?:games\/[a-z0-9]+(?:-[a-z0-9]+)*(?:\/(?:support|privacy))?|support|privacy)\/)?index\.html|404\.html|sitemap\.xml|robots\.txt)$/.test(
     file,
   );
 }

@@ -16,7 +16,9 @@ No framework, client JavaScript, analytics, external fonts, or runtime dependenc
 | `/hexa-merge-support/`                 | Existing Hexa Merge project site; maintained in a separate repository |
 
 The first collection contains **Hexa Merge** (available on iOS), **Star Jumper**,
-**Stack & Pop**, and **2048** (in development). App Store availability varies by
+**Stack & Pop**, **2048**, and **Sudoku** (in development). Sudoku has its own
+English/Korean prerelease support and privacy pages, without a download claim.
+App Store availability varies by
 region. A development listing is not an announcement of a release date or a
 claim that a game has passed App Review.
 
@@ -62,7 +64,11 @@ separate project website, so they will not resolve on this local server.
    lowercase hyphenated `slug`, and fill both `en` and `ko` copy. Supply exactly
    three feature descriptions. Supported color accents are `violet`, `blue`,
    `orange` and `pink`.
-3. Leave `status: "development"` and all three release URLs `null` until release.
+3. Leave `status: "development"` and `appStoreUrl: null` until public release.
+   Support/privacy links can be published before release by adding bilingual
+   `documents.support` and `documents.privacy` section arrays and setting their
+   URLs to `/games/<slug>/support/` and `/games/<slug>/privacy/`. Otherwise leave
+   both URLs null. The generator owns those nested routes and language links.
    No invented download URLs, dates, testimonials or unsupported gameplay claims.
 4. Run the three commands above. The homepage, two detail pages, support/privacy
    directories and sitemap update automatically. Inspect English/Korean copy,
@@ -130,6 +136,7 @@ The initial icons are unchanged copies of existing 512px VibeGameLab web icons
 | `assets/games/star-jumper.png`   | `apps/star_jumper/web/icons/Icon-512.png`   |
 | `assets/games/stack-and-pop.png` | `apps/stack_and_pop/web/icons/Icon-512.png` |
 | `assets/games/2048.png`          | `apps/2048/web/icons/Icon-512.png`          |
+| `assets/games/sudoku.png`        | `apps/sudoku/web/icons/Icon-512.png`        |
 
 No new artwork or game binary is produced by this website build. The original
 game repositories remain the source for asset approval and production records.

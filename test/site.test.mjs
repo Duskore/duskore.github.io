@@ -101,7 +101,7 @@ test("all index pages have reciprocal language alternates and a canonical", () =
   }
 });
 
-test("only released game details provide download and game-specific policy links", () => {
+test("only released games provide downloads; prerelease documents stay game-specific", () => {
   for (const game of catalog.games) {
     for (const prefix of ["", "ko/"]) {
       const html = pages.get(`${prefix}games/${game.slug}/index.html`);
@@ -113,6 +113,10 @@ test("only released game details provide download and game-specific policy links
         assert.ok(!html.includes('href="https://apps.apple.com/'));
         assert.ok(!html.includes('href="/hexa-merge-support/'));
         assert.match(html, /class="development-note"/);
+        if (game.documents) {
+          assert.ok(html.includes(`href="/${prefix}games/${game.slug}/support/"`));
+          assert.ok(html.includes(`href="/${prefix}games/${game.slug}/privacy/"`));
+        }
       }
     }
   }
@@ -156,7 +160,7 @@ test("publisher declaration and legacy support route ownership stay protected", 
     assert.equal(isOwnedOutput(file), false, file);
 });
 
-test("adding a fifth game produces both detail routes and every directory entry", () => {
+test("adding another game produces both detail routes and every directory entry", () => {
   const next = clone();
   const extra = structuredClone(next.games[1]);
   extra.slug = "next-game";
@@ -233,4 +237,18 @@ test("catalog copy is rendered as text, never executable markup", () => {
   const html = renderSite(next).get("games/hexa-merge/index.html");
   assert.ok(!html.includes("<img src=x"));
   assert.ok(html.includes("&lt;img src=x onerror=alert(1)&gt;"));
+  const sudoku = next.games.find((game) => game.slug === "sudoku");
+  sudoku.documents.privacy.en[0].body = "<script>alert(1)</script>";
+  const policy = renderSite(next).get("games/sudoku/privacy/index.html");
+  assert.ok(!policy.includes("<script>"));
+  assert.ok(policy.includes("&lt;script&gt;alert(1)&lt;/script&gt;"));
+});
+
+test("prerelease documents require both languages and cannot claim another game's routes", () => {
+  const missing = clone();
+  delete missing.games.find((game) => game.slug === "sudoku").documents.privacy.ko;
+  assert.throws(() => validateCatalog(missing));
+  const wrong = clone();
+  wrong.games.find((game) => game.slug === "sudoku").privacyUrl = "/hexa-merge-support/privacy/";
+  assert.throws(() => validateCatalog(wrong));
 });
