@@ -87,6 +87,12 @@ the generator cleans obsolete files listed in its owned manifest.
 
 ## Protected URLs and AdMob
 
+`/googleba016c8c5e54e4ff.html` is Google's public HTML ownership challenge for
+this website, added for the Sudoku OAuth branding verification. It is not a
+private credential. Keep it at the repository/domain root after verification;
+the page generator does not own or rewrite it. Verify its HTTP 200 response and
+exact `google-site-verification` text separately from the generated-page checks.
+
 Do not rename, remove, redirect or overwrite these existing registered URLs:
 
 - https://duskore.github.io/hexa-merge-support/
