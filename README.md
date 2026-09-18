@@ -15,10 +15,10 @@ No framework, client JavaScript, analytics, external fonts, or runtime dependenc
 | `/app-ads.txt`                         | Shared publisher declaration at the developer-domain root             |
 | `/hexa-merge-support/`                 | Existing Hexa Merge project site; maintained in a separate repository |
 
-The first collection contains **Hexa Merge** (available on iOS), **Star Jumper**,
-**Stack & Pop**, **2048**, and **Sudoku** (in development). Sudoku has its own
-English/Korean prerelease support and privacy pages, without a download claim.
-App Store availability varies by
+The first collection contains **Hexa Merge** (available on iOS), **Duskore Star
+Jumper**, **Stack & Pop**, **2048**, and **Duskore Sudoku** (in development).
+Star Jumper and Sudoku have their own English/Korean prerelease support and
+privacy pages, without a download claim. App Store availability varies by
 region. A development listing is not an announcement of a release date or a
 claim that a game has passed App Review.
 

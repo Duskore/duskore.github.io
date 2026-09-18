@@ -162,7 +162,11 @@ test("publisher declaration and legacy support route ownership stay protected", 
 
 test("adding another game produces both detail routes and every directory entry", () => {
   const next = clone();
-  const extra = structuredClone(next.games[1]);
+  const extra = structuredClone(
+    next.games.find(
+      (game) => game.status === "development" && !game.documents,
+    ),
+  );
   extra.slug = "next-game";
   extra.en.name = "Next Game";
   extra.ko.name = "다음 게임";
@@ -209,18 +213,24 @@ test("invalid slugs, duplicates, incomplete translations and unsafe assets are r
 
 test("release transitions require real store, support and privacy links", () => {
   const next = clone();
-  next.games[1].status = "available";
+  const candidate = next.games.find(
+    (game) => game.status === "development" && !game.documents,
+  );
+  candidate.status = "available";
   assert.throws(() => validateCatalog(next), /App Store URL/);
-  next.games[1].appStoreUrl = "https://apps.apple.com/app/id123456789";
+  candidate.appStoreUrl = "https://apps.apple.com/app/id123456789";
   assert.throws(() => validateCatalog(next), /support and privacy/);
-  next.games[1].supportUrl = "//external/";
-  next.games[1].privacyUrl = "javascript:alert(1)";
+  candidate.supportUrl = "//external/";
+  candidate.privacyUrl = "javascript:alert(1)";
   assert.throws(() => validateCatalog(next), /support and privacy/);
   const premature = clone();
-  premature.games[1].appStoreUrl = catalog.games[0].appStoreUrl;
+  premature.games.find((game) => game.status === "development").appStoreUrl =
+    catalog.games[0].appStoreUrl;
   assert.throws(() => validateCatalog(premature), /Unreleased game/);
   const feature = clone();
-  feature.featuredSlug = feature.games[1].slug;
+  feature.featuredSlug = feature.games.find(
+    (game) => game.status === "development",
+  ).slug;
   assert.throws(
     () => validateCatalog(feature),
     /Featured game must be available/,
@@ -251,4 +261,60 @@ test("prerelease documents require both languages and cannot claim another game'
   const wrong = clone();
   wrong.games.find((game) => game.slug === "sudoku").privacyUrl = "/hexa-merge-support/privacy/";
   assert.throws(() => validateCatalog(wrong));
+});
+
+test("Star Jumper publishes bilingual prerelease support and privacy without release claims", () => {
+  const star = catalog.games.find((game) => game.slug === "star-jumper");
+  assert.equal(star.en.name, "Duskore Star Jumper");
+  assert.equal(star.ko.name, "Duskore Star Jumper");
+  assert.equal(star.status, "development");
+  assert.equal(star.appStoreUrl, null);
+  assert.equal(star.supportUrl, "/games/star-jumper/support/");
+  assert.equal(star.privacyUrl, "/games/star-jumper/privacy/");
+
+  const expected = [
+    [
+      "games/star-jumper/support/index.html",
+      [
+        "a public download and release date have not been announced",
+        "Opt-in applies only to future completed runs",
+        "There are no banner or rewarded ads",
+        "No approved background music is included",
+      ],
+    ],
+    [
+      "ko/games/star-jumper/support/index.html",
+      [
+        "공개 다운로드와 출시일은 아직 안내하지 않습니다",
+        "이전 점수는 소급 전송하지 않습니다",
+        "배너·보상 광고는 사용하지 않습니다",
+        "승인된 배경 음악이 포함되지 않으므로",
+      ],
+    ],
+    [
+      "games/star-jumper/privacy/index.html",
+      [
+        "com.duskore.starjumper",
+        "disables Firebase Analytics collection and Firebase Crashlytics collection",
+        "does not backfill an earlier best height",
+        "No banner or rewarded ads are used",
+      ],
+    ],
+    [
+      "ko/games/star-jumper/privacy/index.html",
+      [
+        "com.duskore.starjumper",
+        "Firebase Analytics 수집과 Firebase Crashlytics 수집을 비활성화",
+        "이전 최고 높이는 소급 전송하지 않습니다",
+        "배너·보상 광고는 사용하지 않습니다",
+      ],
+    ],
+  ];
+  for (const [file, phrases] of expected) {
+    const html = pages.get(file);
+    assert.ok(html, file);
+    assert.ok(!html.includes('href="https://apps.apple.com/'), file);
+    for (const phrase of phrases)
+      assert.ok(html.includes(phrase), `${file}: ${phrase}`);
+  }
 });

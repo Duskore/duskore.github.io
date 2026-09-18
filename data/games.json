@@ -40,31 +40,181 @@
       "image": "/assets/games/star-jumper.png",
       "accent": "blue",
       "appStoreUrl": null,
-      "supportUrl": null,
-      "privacyUrl": null,
+      "supportUrl": "/games/star-jumper/support/",
+      "privacyUrl": "/games/star-jumper/privacy/",
       "en": {
-        "name": "Star Jumper",
+        "name": "Duskore Star Jumper",
         "genre": "One-tap arcade",
         "tagline": "One tap. The next orbit.",
         "description": "Time your launch and send a little star leaping from one orbit to the next.",
-        "body": "Watch the orbit, choose your moment, and tap to launch. Star Jumper is a timing game about landing the next jump and finding your rhythm among the stars.",
+        "body": "Watch the orbit, choose your moment, and tap to launch. Duskore Star Jumper is a timing game about landing the next jump, building a streak and reaching a new best height among the stars.",
         "features": [
           "A single tap to launch",
-          "Orbit-to-orbit timing",
-          "A bright little journey through space"
+          "Orbit timing, three misses and Star Rush",
+          "A best height to beat"
         ]
       },
       "ko": {
-        "name": "Star Jumper",
+        "name": "Duskore Star Jumper",
         "genre": "원탭 아케이드",
         "tagline": "한 번의 탭, 다음 궤도로.",
         "description": "타이밍을 맞춰 작은 별을 날려 보내세요. 궤도에서 다음 궤도로 이어지는 점프 게임입니다.",
-        "body": "궤도를 살피고, 순간을 고른 뒤 탭하세요. 다음 궤도에 착지하며 나만의 리듬을 찾아가는 작은 별의 여정을 준비하고 있습니다.",
+        "body": "궤도를 살피고, 순간을 고른 뒤 탭하세요. 다음 궤도에 착지해 연속 기록을 만들고 우주에서 새로운 최고 높이에 도전하는 타이밍 게임입니다.",
         "features": [
           "탭 한 번으로 출발",
-          "궤도 사이를 잇는 타이밍",
-          "작은 별과 함께하는 우주 여행"
+          "세 번의 실수와 Star Rush가 있는 궤도 타이밍",
+          "새로운 최고 높이에 도전"
         ]
+      },
+      "documents": {
+        "support": {
+          "en": [
+            {
+              "heading": "Duskore Star Jumper support",
+              "body": "This page supports the iOS app, including prerelease testing. The app is being prepared for release; a public download and release date have not been announced. Publishing these instructions does not mean provider setup, physical-device testing or App Store review is complete."
+            },
+            {
+              "heading": "Playing a run",
+              "body": "After signing in, press PLAY. Tap once to launch the star toward the next orbit. A missed landing uses one of three energy stars, and five consecutive landings start STAR RUSH. The result shows the completed run's height and best height. PLAY AGAIN starts another run; HOME ends the current run and returns to the menu."
+            },
+            {
+              "heading": "Accounts and deletion",
+              "body": "Guest, Google and Apple sign-in are offered when their services are configured and available. From the menu, open Settings to sign out or choose Delete Account. Successful deletion removes the Firebase account, clears that account's leaderboard-sharing choice and returns to the login screen. The app does not automatically start Apple or Google sign-in after deletion; press a login button to authenticate again. Apple authorization revocation is attempted for Apple accounts, and some providers may require recent sign-in. Signing out or uninstalling alone does not delete the account."
+            },
+            {
+              "heading": "Optional Game Center sharing",
+              "body": "The online leaderboard can remain unavailable in prerelease or unconfigured builds. When it is available, score sharing starts off for each account and requires a separate explanation and explicit opt-in. Opt-in applies only to future completed runs and never uploads earlier scores. Use the leaderboard-sharing control to withdraw; withdrawal invalidates pending authorization and stops later submissions, but it cannot remove a score Apple already processed. Declining or withdrawing does not block play."
+            },
+            {
+              "heading": "Advertising and privacy choices",
+              "body": "Advertising can remain unavailable until its production services are configured. When enabled on iOS, the app asks for ATT authorization before UMP regional consent handling and requests ads only when both gates allow it. An interstitial is considered only on every third completed run's PLAY AGAIN transition, after the first two completed runs; it is not used on launch, during play or when choosing HOME. There are no banner or rewarded ads. A missing or failed ad never blocks the next run. Privacy Choices can show applicable regional options and open iOS tracking settings; returning to the app rechecks permission."
+            },
+            {
+              "heading": "Audio",
+              "body": "Sound effects follow the in-app sound setting. No approved background music is included in the current prerelease build, so hearing no background track is expected."
+            },
+            {
+              "heading": "Report a problem",
+              "body": "Use the public GitHub support link below. Include “Duskore Star Jumper”, the app version/build, iPhone model, iOS version and reproduction steps. Do not post passwords, tokens, email addresses, Apple/Google/Game Center account details or screenshots containing private information. If account deletion fails, report the error without identifying account data."
+            }
+          ],
+          "ko": [
+            {
+              "heading": "Duskore Star Jumper 지원",
+              "body": "iOS 앱과 사전 테스트 버전을 위한 안내입니다. 앱은 출시 준비 중이며 공개 다운로드와 출시일은 아직 안내하지 않습니다. 이 안내의 공개는 제공자 설정, 실기기 검증 또는 App Store 심사가 완료됐다는 뜻이 아닙니다."
+            },
+            {
+              "heading": "한 판 플레이하기",
+              "body": "로그인한 뒤 PLAY를 누르세요. 별이 다음 궤도를 향하도록 한 번 탭해 출발합니다. 착지에 실패하면 세 개의 에너지 별 중 하나를 잃고, 다섯 번 연속 착지하면 STAR RUSH가 시작됩니다. 결과 화면에서 완료한 판의 높이와 최고 높이를 확인할 수 있습니다. PLAY AGAIN은 새 판을 시작하고 HOME은 진행 중인 판을 종료한 뒤 메뉴로 돌아갑니다."
+            },
+            {
+              "heading": "계정과 삭제",
+              "body": "서비스가 구성되고 사용 가능한 경우 게스트·Google·Apple 로그인을 제공합니다. 메뉴에서 Settings를 열어 로그아웃하거나 Delete Account를 선택할 수 있습니다. 삭제에 성공하면 Firebase 계정과 해당 계정의 리더보드 공유 선택을 지우고 로그인 화면으로 이동합니다. 삭제 뒤 Apple 또는 Google 로그인이 자동으로 시작되지 않으며 다시 인증하려면 로그인 버튼을 눌러야 합니다. Apple 계정은 앱 승인 철회를 시도하고, 제공자에 따라 최근 로그인이 필요할 수 있습니다. 로그아웃이나 앱 제거만으로 계정이 삭제되지는 않습니다."
+            },
+            {
+              "heading": "선택형 Game Center 공유",
+              "body": "사전 테스트 또는 미설정 빌드에서는 온라인 리더보드를 사용할 수 없을 수 있습니다. 사용 가능한 경우에도 계정마다 점수 공유는 꺼진 상태에서 시작하며 별도 설명과 명시적 동의가 필요합니다. 동의 뒤 완료한 판부터 전송 대상이 되며 이전 점수는 소급 전송하지 않습니다. 리더보드 공유 제어에서 철회하면 대기 중인 승인을 무효화하고 이후 점수 전송을 중단하지만 Apple이 이미 처리한 점수는 삭제할 수 없습니다. 거부하거나 철회해도 게임은 계속 플레이할 수 있습니다."
+            },
+            {
+              "heading": "광고와 개인정보 선택",
+              "body": "운영 서비스가 구성되기 전에는 광고를 사용할 수 없을 수 있습니다. iOS에서 광고를 활성화하면 ATT 허용 뒤 UMP 지역별 동의를 처리하고 두 조건이 허용한 경우에만 광고를 요청합니다. 첫 두 번의 완료 판은 건너뛰고, 이후 매 세 번째 완료 판의 PLAY AGAIN 전환에서만 전면 광고를 검토합니다. 앱 시작, 플레이 중, HOME 선택에는 표시하지 않으며 배너·보상 광고는 사용하지 않습니다. 광고가 없거나 실패해도 다음 판을 막지 않습니다. Privacy Choices에서 해당 지역 선택을 확인하고 iOS 추적 설정을 열 수 있으며 앱 복귀 시 권한을 다시 확인합니다."
+            },
+            {
+              "heading": "오디오",
+              "body": "효과음은 앱의 사운드 설정을 따릅니다. 현재 사전 테스트 빌드에는 승인된 배경 음악이 포함되지 않으므로 배경 음악이 들리지 않는 것이 정상입니다."
+            },
+            {
+              "heading": "문제 신고",
+              "body": "아래 공개 GitHub 지원 링크를 이용하세요. Duskore Star Jumper, 앱 버전·빌드, iPhone 모델, iOS 버전과 재현 방법을 적어 주세요. 비밀번호, 토큰, 이메일, Apple·Google·Game Center 계정 정보와 개인정보가 담긴 스크린샷을 공개하지 마세요. 인앱 계정 삭제 실패도 개인 식별 정보 없이 오류 내용만 알려 주세요."
+            }
+          ]
+        },
+        "privacy": {
+          "en": [
+            {
+              "heading": "Scope and effective date",
+              "body": "Effective September 18, 2026. Duskore provides Duskore Star Jumper for iOS under bundle identifier com.duskore.starjumper. This policy covers this app's prerelease and release versions, not other Duskore games. Publication of this policy is not a claim of App Store availability, provider operation, physical-device validation or review approval."
+            },
+            {
+              "heading": "Authentication",
+              "body": "When the dedicated services are configured, Firebase Authentication processes a user identifier and sign-in provider for guest, Google and Apple sign-in. Google or Apple may share the email, name and profile information you authorize for authentication and account display. Guest access creates an anonymous Firebase account. Cancelling sign-in does not start a game session."
+            },
+            {
+              "heading": "Gameplay data stored on the device",
+              "body": "Best height, settings and a per-account, policy-versioned leaderboard-sharing choice can be stored locally on the device. The Firebase user identifier scopes the sharing choice to the signed-in account. This local data is not a cloud backup, and ordinary gameplay does not require public score sharing."
+            },
+            {
+              "heading": "Analytics and crash reporting",
+              "body": "This Star Jumper version disables Firebase Analytics collection and Firebase Crashlytics collection, does not send gameplay events through the shared AnalyticsService, and does not install shared Crashlytics error handlers. Firebase analytics and crash SDK dependencies may still be present through the shared runtime, but their inclusion does not enable collection. Authentication and advertising permissions are separate. This policy will be revised before either collection mode is enabled for this app."
+            },
+            {
+              "heading": "Optional Game Center score sharing",
+              "body": "When the leaderboard is configured, Game Center score sharing remains off until the signed-in user receives an explanation and explicitly opts in for that account and policy version. Only scores from future completed runs are eligible; the app does not backfill an earlier best height. An authorized submission can provide Apple with the Game Center player identifier, nickname, score and related leaderboard activity for public ranking and Game Center operation. Withdrawing invalidates pending authorization and stops future submissions, but does not erase information Apple already processed. Apple handles Game Center information under its own policy."
+            },
+            {
+              "heading": "Advertising and tracking choices",
+              "body": "When advertising is configured, Google AdMob can show an interstitial only at the natural PLAY AGAIN transition after every third completed run; the first two completed runs are skipped. No banner or rewarded ads are used. On iOS, the app requires ATT authorization before UMP regional consent handling and starts Mobile Ads requests only when both gates allow it. Denied, restricted, unresolved or unavailable tracking keeps ads off while play remains available. Privacy Choices can show applicable regional choices and open iOS tracking settings. Changing a choice affects future processing, not processing already completed."
+            },
+            {
+              "heading": "Advertising information and partners",
+              "body": "When both gates permit an ad request, Google AdMob and partners disclosed in its regional message may process IP address and approximate location, device and advertising identifiers, ad views or interactions, and diagnostics for ad delivery, measurement, fraud prevention and personalization. Information may be combined with data from other companies' apps or websites, and regional opt-out choices may apply to processing treated as sale or sharing under local laws. Ad unavailability never prevents ordinary play."
+            },
+            {
+              "heading": "Providers and international processing",
+              "body": "Gated services are Google Firebase Authentication, Google Sign-In, Apple Sign in with Apple, Apple Game Center, and Google AdMob/UMP with its disclosed advertising partners. Firebase Analytics and Crashlytics collection are disabled for this app version as described above. GitHub processes public support issues under its own policy. Providers may process information outside your country subject to their safeguards."
+            },
+            {
+              "heading": "Retention and deletion",
+              "body": "Authentication data remains while the Firebase account exists. Settings → Delete Account removes that account, clears its local leaderboard-sharing choice and signs the user out; Apple authorization revocation is also attempted for Apple accounts. The app returns to the login screen without automatically starting a provider login. Local settings and best height may remain until app data is removed. Game Center and advertising records follow the providers' retention and legal obligations, and account deletion does not remove a Google, Apple or Game Center account or a score Apple already processed. Public support issues remain until removed by their author, GitHub or a repository administrator."
+            },
+            {
+              "heading": "Your choices and contact",
+              "body": "You can use a guest account, cancel provider login, keep Game Center sharing off or withdraw it, decline tracking, revisit applicable regional advertising choices, delete the app account, or uninstall to stop future app activity. Contact Duskore through the public support link below for privacy or deletion problems; do not include private information in a public issue. This is a general-audience arcade game, not directed specifically to children. If you believe a child provided personal information, contact support without posting that information publicly. Material changes will be reflected here with a revised effective date."
+            }
+          ],
+          "ko": [
+            {
+              "heading": "적용 범위와 시행일",
+              "body": "시행일: 2026년 9월 18일. Duskore가 com.duskore.starjumper 번들 식별자로 제공하는 iOS용 Duskore Star Jumper의 사전 테스트 및 출시 버전에 적용하며 다른 Duskore 게임에는 적용되지 않습니다. 본 방침 공개는 App Store 출시, 제공자 동작, 실기기 검증 또는 심사 승인이 완료됐다는 뜻이 아닙니다."
+            },
+            {
+              "heading": "인증 정보",
+              "body": "전용 서비스가 구성된 경우 Firebase Authentication은 게스트·Google·Apple 로그인에 사용자 식별자와 로그인 제공자 정보를 처리합니다. Google·Apple은 사용자가 허용한 이메일, 이름 및 프로필 정보를 인증과 계정 표시에 제공할 수 있습니다. 게스트 이용도 익명 Firebase 계정을 생성합니다. 로그인을 취소하면 게임 세션이 시작되지 않습니다."
+            },
+            {
+              "heading": "기기에 저장되는 게임 정보",
+              "body": "최고 높이, 설정과 계정별·정책 버전별 리더보드 공유 선택은 기기에 저장될 수 있습니다. Firebase 사용자 식별자는 로그인한 계정별로 공유 선택을 구분하는 데 사용됩니다. 이 로컬 정보는 클라우드 백업이 아니며 일반 플레이에는 공개 점수 공유가 필요하지 않습니다."
+            },
+            {
+              "heading": "이용 분석과 오류 보고",
+              "body": "현재 Star Jumper 버전은 Firebase Analytics 수집과 Firebase Crashlytics 수집을 비활성화하고, 공용 AnalyticsService로 게임 이벤트를 보내거나 공용 Crashlytics 오류 핸들러를 설치하지 않습니다. 공용 런타임을 통해 Firebase 분석·오류 SDK 의존성이 포함될 수 있지만 포함만으로 수집이 활성화되지는 않습니다. 인증과 광고 권한은 별개입니다. 이 앱에서 두 수집 기능 중 하나를 활성화하기 전에 본 방침을 갱신합니다."
+            },
+            {
+              "heading": "선택형 Game Center 점수 공유",
+              "body": "리더보드가 구성된 경우에도 로그인한 사용자가 설명을 확인하고 해당 계정과 정책 버전에 명시적으로 동의하기 전까지 Game Center 점수 공유는 꺼져 있습니다. 동의 뒤 완료한 판의 점수만 대상이며 이전 최고 높이는 소급 전송하지 않습니다. 승인된 전송은 공개 순위와 Game Center 운영을 위해 Game Center 플레이어 식별자, 닉네임, 점수 및 관련 리더보드 활동을 Apple에 제공할 수 있습니다. 철회하면 대기 중인 승인을 무효화하고 이후 전송을 중단하지만 Apple이 이미 처리한 정보는 지우지 않습니다. Apple은 자체 방침에 따라 Game Center 정보를 처리합니다."
+            },
+            {
+              "heading": "광고와 추적 선택",
+              "body": "광고가 구성된 경우 Google AdMob 전면 광고는 첫 두 번의 완료 판을 건너뛰고 이후 매 세 번째 완료 판의 자연스러운 PLAY AGAIN 전환에서만 표시될 수 있습니다. 배너·보상 광고는 사용하지 않습니다. iOS에서는 ATT 허용 뒤 UMP 지역별 동의를 처리하고 두 조건이 허용한 경우에만 Mobile Ads 광고 요청을 시작합니다. 추적이 거부·제한·미결정·사용 불가이면 광고는 꺼지고 게임은 계속 플레이할 수 있습니다. Privacy Choices에서 해당 지역 선택을 확인하고 iOS 추적 설정을 열 수 있습니다. 선택 변경은 이후 처리에 적용되며 이미 완료된 처리를 되돌리지는 않습니다."
+            },
+            {
+              "heading": "광고 정보와 파트너",
+              "body": "두 조건이 광고 요청을 허용한 경우 Google AdMob 및 지역 메시지에 공개된 파트너가 IP 주소·대략적 위치, 기기·광고 식별자, 광고 조회·상호작용과 진단 정보를 광고 제공·측정·부정 이용 방지·개인화에 처리할 수 있습니다. 다른 회사 앱·웹사이트의 정보와 결합될 수 있으며 일부 지역 법률상 판매·공유로 간주되는 처리에는 지역별 거부 선택이 적용될 수 있습니다. 광고를 사용할 수 없어도 일반 플레이는 막히지 않습니다."
+            },
+            {
+              "heading": "제공자와 국외 처리",
+              "body": "조건부로 사용하는 서비스는 Google Firebase Authentication, Google 로그인, Apple 로그인, Apple Game Center, Google AdMob·UMP 및 공개된 광고 파트너입니다. 이 앱 버전의 Firebase Analytics·Crashlytics 수집은 위 설명과 같이 꺼져 있습니다. GitHub는 공개 지원 이슈를 자체 방침에 따라 처리합니다. 제공자는 각자의 보호 조치에 따라 거주 국가 외 지역에서 정보를 처리할 수 있습니다."
+            },
+            {
+              "heading": "보관과 삭제",
+              "body": "인증 정보는 Firebase 계정이 있는 동안 보관됩니다. Settings → Delete Account는 해당 계정과 기기의 리더보드 공유 선택을 삭제하고 로그아웃하며 Apple 계정의 앱 승인 철회도 시도합니다. 이후 제공자 로그인을 자동으로 시작하지 않고 로그인 화면으로 이동합니다. 기기 설정과 최고 높이는 앱 데이터를 제거할 때까지 남을 수 있습니다. Game Center·광고 기록은 제공자의 보관 정책과 법적 의무를 따르며 앱 계정 삭제는 Google·Apple·Game Center 계정이나 Apple이 이미 처리한 점수를 삭제하지 않습니다. 공개 지원 이슈는 작성자·GitHub·저장소 관리자가 삭제할 때까지 남습니다."
+            },
+            {
+              "heading": "이용자 선택과 문의",
+              "body": "게스트 이용, 제공자 로그인 취소, Game Center 공유 미동의 또는 철회, 추적 거부, 해당 지역 광고 선택 변경, 앱 계정 삭제와 앱 제거를 선택할 수 있습니다. 개인정보·삭제 문제는 아래 공개 지원 경로로 문의하되 공개 이슈에 개인 정보를 적지 마세요. 일반 이용자를 위한 아케이드 게임이며 아동만을 대상으로 하지 않습니다. 아동의 정보 제공이 의심되면 해당 정보를 공개하지 말고 지원 경로로 알려 주세요. 중요한 변경은 갱신된 시행일과 함께 이 페이지에 반영합니다."
+            }
+          ]
+        }
       }
     },
     {
