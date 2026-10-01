@@ -163,10 +163,11 @@ test("publisher declaration and legacy support route ownership stay protected", 
 test("adding another game produces both detail routes and every directory entry", () => {
   const next = clone();
   const extra = structuredClone(
-    next.games.find(
-      (game) => game.status === "development" && !game.documents,
-    ),
+    next.games.find((game) => game.status === "development"),
   );
+  delete extra.documents;
+  extra.supportUrl = null;
+  extra.privacyUrl = null;
   extra.slug = "next-game";
   extra.en.name = "Next Game";
   extra.ko.name = "다음 게임";
@@ -213,9 +214,10 @@ test("invalid slugs, duplicates, incomplete translations and unsafe assets are r
 
 test("release transitions require real store, support and privacy links", () => {
   const next = clone();
-  const candidate = next.games.find(
-    (game) => game.status === "development" && !game.documents,
-  );
+  const candidate = next.games.find((game) => game.status === "development");
+  delete candidate.documents;
+  candidate.supportUrl = null;
+  candidate.privacyUrl = null;
   candidate.status = "available";
   assert.throws(() => validateCatalog(next), /App Store URL/);
   candidate.appStoreUrl = "https://apps.apple.com/app/id123456789";
