@@ -19,6 +19,18 @@ const catalog = JSON.parse(
 const pages = renderSite(catalog);
 const htmlPages = [...pages].filter(([file]) => file.endsWith(".html"));
 const clone = () => structuredClone(catalog);
+test("restored leaderboards have current bilingual privacy and support", () => {
+  for (const slug of ["stack-and-pop", "2048"]) {
+    const game = catalog.games.find(game => game.slug === slug);
+    for (const locale of ["en", "ko"]) {
+      const policy = game.documents.privacy[locale];
+      assert.ok(policy.some(section => section.heading.includes("Game Center")));
+      const text = JSON.stringify(game.documents);
+      assert.doesNotMatch(text, /No Game Center score sharing is enabled|Online leaderboard sharing and background music are not enabled|Game Center 점수 공유를 활성화하지 않았습니다/);
+      assert.match(JSON.stringify(policy), /SCORE SHARING/);
+    }
+  }
+});
 const legacyRoutes = new Set([
   "/hexa-merge-support/",
   "/hexa-merge-support/support/",
