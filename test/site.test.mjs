@@ -239,7 +239,7 @@ test("release transitions require real store, support and privacy links", () => 
   assert.throws(() => validateCatalog(next), /support and privacy/);
   const premature = clone();
   premature.games.find((game) => game.status === "development").appStoreUrl =
-    catalog.games[0].appStoreUrl;
+    catalog.games.find((game) => game.status === "available").appStoreUrl;
   assert.throws(() => validateCatalog(premature), /Unreleased game/);
   const feature = clone();
   feature.featuredSlug = feature.games.find(

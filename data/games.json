@@ -2,6 +2,67 @@
   "featuredSlug": "hexa-merge",
   "games": [
     {
+      "slug": "mirror-fold",
+      "status": "development",
+      "image": "/assets/games/mirror-fold.png",
+      "accent": "violet",
+      "appStoreUrl": null,
+      "supportUrl": "/games/mirror-fold/support/",
+      "privacyUrl": "/games/mirror-fold/privacy/",
+      "en": {
+        "name": "Duskore Mirror Fold",
+        "genre": "Folding puzzle arcade",
+        "tagline": "Fold the sheet. Pop the mirror.",
+        "description": "Reflect a board of colored tiles across a crease. Match pairs, break stones and keep space for the next fold.",
+        "body": "Drag to preview a fold, then release to reflect the lifted side. Matching colors pop; mismatches leave stones that nearby pops can shatter. New tiles arrive after folds and on a steady tide timer. Every run follows the same rules, with a local best score to beat.",
+        "features": ["Preview the crease before folding", "Match colors and prisms to clear pairs", "Break stones and build scoring streaks"]
+      },
+      "ko": {
+        "name": "Duskore Mirror Fold",
+        "genre": "접기 퍼즐 아케이드",
+        "tagline": "보드를 접고, 거울처럼 맞추세요.",
+        "description": "색 타일 보드를 접어 같은 색을 겹치세요. 짝을 지우고 돌을 깨며 다음 접기를 위한 공간을 만듭니다.",
+        "body": "드래그로 접힐 위치를 미리 보고 놓으면 한쪽 타일이 반사되어 이동합니다. 같은 색은 사라지고 다른 색은 돌을 남깁니다. 주변에서 짝을 지우면 돌도 깨집니다. 접은 뒤와 일정 시간마다 새 타일이 들어오며 모든 판에 같은 규칙이 적용됩니다.",
+        "features": ["접기 전에 접힐 위치 미리 보기", "같은 색과 프리즘으로 짝 지우기", "돌을 깨고 연속 점수 쌓기"]
+      },
+      "documents": {
+        "support": {
+          "en": [
+            {"heading": "Mirror Fold support", "body": "Support for the iOS app and prerelease testing. Release preparation is in progress; this page does not claim TestFlight availability, completed service setup or App Store approval."},
+            {"heading": "Playing", "body": "After sign-in, tap PLAY. Drag and release to fold the board horizontally or vertically. Matching colors or prisms pop; mismatches leave stones. Pop beside stones to break them. Three new tiles arrive after a fold and one every eight seconds. HOME ends the run and returns to the menu. PLAY AGAIN starts a new run after the board jams. Best scores are local, not an online leaderboard."},
+            {"heading": "Coins and ads", "body": "Five daily play coins are provided; a new run costs one. When available and permitted, an optional rewarded ad grants one play coin after confirmed completion. A separate bottom banner may appear; no interstitial ads are used. Declining tracking does not prevent play with available coins. If no ad is available, try later or wait for daily coins."},
+            {"heading": "Accounts and privacy choices", "body": "Guest, Google and Apple sign-in depend on their configured services. Menu Settings offers sign-out and Delete Account. Successful deletion removes the Firebase account and clears this account's local coins and local best, then returns to login without automatically opening provider sign-in. Apple authorization revocation is part of the Apple deletion path. PRIVACY CHOICES opens available regional ad choices; system tracking settings can be revisited. Do not post private account data in support issues."},
+            {"heading": "Sound and reports", "body": "Shared sound controls manage effects and any bundled music. Mirror Fold's new BGM is still awaiting generation and listening validation; older games' music approval does not apply. For a bug, include the game name, exact version/build, device, OS and reproduction steps using the public support link below. Never post passwords, tokens or private screenshots."}
+          ],
+          "ko": [
+            {"heading": "Mirror Fold 지원", "body": "iOS 앱과 사전 테스트를 위한 안내입니다. 출시 준비 중이며 TestFlight 제공, 서비스 설정 완료나 App Store 승인을 의미하지 않습니다."},
+            {"heading": "플레이", "body": "로그인 후 PLAY를 누르세요. 드래그하고 놓으면 보드가 가로나 세로로 접힙니다. 같은 색이나 프리즘은 짝을 지우며 다른 색은 돌을 남깁니다. 돌 옆의 짝을 지우면 돌도 깨집니다. 접은 뒤 세 타일, 매 8초마다 한 타일이 추가됩니다. HOME은 현재 판을 종료하고 메뉴로 돌아가며 보드가 막히면 PLAY AGAIN으로 새 판을 시작합니다. 최고점은 기기에 저장되며 온라인 순위표는 없습니다."},
+            {"heading": "코인과 광고", "body": "하루 플레이 코인 5개가 제공되며 새 판에 1개를 사용합니다. 광고가 허용되고 제공 가능하면 선택형 보상 광고 완료 확인 후 코인 1개를 받습니다. 별도 하단 배너가 표시될 수 있고 전면 광고는 없습니다. 추적을 거부해도 보유 코인으로 플레이할 수 있습니다. 광고가 없으면 나중에 다시 시도하거나 일일 코인을 기다려 주세요."},
+            {"heading": "계정과 개인정보 선택", "body": "게스트·Google·Apple 로그인은 서비스 설정과 가용성에 따라 제공됩니다. 메뉴 Settings에서 로그아웃과 Delete Account를 선택할 수 있습니다. 삭제 성공 시 Firebase 계정, 해당 계정의 기기 내 코인과 최고점을 정리한 뒤 로그인 화면으로 돌아가며 제공자 로그인을 자동 실행하지 않습니다. Apple 계정 삭제 경로는 앱 승인 철회를 포함합니다. PRIVACY CHOICES에서 지역별 광고 선택을, 시스템 설정에서 추적 권한을 확인하세요. 지원 이슈에 계정 개인정보를 게시하지 마세요."},
+            {"heading": "사운드와 문제 신고", "body": "공용 사운드 설정으로 효과음과 포함된 음악을 조절합니다. 새 BGM은 생성·청취 검수 대기 중이며 다른 게임의 승인을 승계하지 않습니다. 아래 공개 지원 링크에 게임명, 정확한 버전·빌드, 기기, OS와 재현 방법을 적어 주세요. 비밀번호·토큰·개인정보가 담긴 화면을 게시하지 마세요."}
+          ]
+        },
+        "privacy": {
+          "en": [
+            {"heading": "Scope and date", "body": "Mirror Fold privacy policy, updated October 7, 2026. Duskore provides this prerelease iOS puzzle app. The support website has no app analytics or ad scripts; GitHub hosting and public issues follow GitHub's policies. Publishing this policy does not establish release readiness."},
+            {"heading": "Authentication and local data", "body": "Firebase Authentication processes account identifiers and provider information for Guest, Google and Apple sign-in. Providers may supply email, name or profile information with your authorization. Guest sign-in creates an anonymous Firebase account. Play coins, local best scores, theme and sound settings are stored on the device. Coins are not purchases or currency with monetary value. There is no cloud score backup or Game Center sharing in this version."},
+            {"heading": "Analytics and diagnostics", "body": "Firebase Analytics may process app sessions, game events, installation identifiers, app/device/OS information, language and approximate region for usage analysis. Crashlytics may process crash details, installation identifiers, timestamps, device/OS and app version for diagnostics. Analytics advertising storage, advertising user data and ad personalization are denied separately and are not enabled by granting AdMob permission. Authentication, analytics and diagnostics are distinct from advertising tracking permission."},
+            {"heading": "Advertising and choices", "body": "AdMob and UMP provide bottom banner and optional rewarded advertising. On iOS the app requires tracking permission before entering its advertising consent flow, then checks regional consent and whether ads may be requested. Ad providers may process device and advertising identifiers, approximate location, ad interactions and diagnostic data. With applicable permission, data may be combined with information from other companies' apps or websites for advertising measurement or personalization. Regional choices may cover processing regarded as sale or sharing. You can decline tracking and keep playing with available coins, and revisit PRIVACY CHOICES or system settings."},
+            {"heading": "Providers, retention and deletion", "body": "Providers include Google Firebase Authentication, Analytics and Crashlytics; Google Sign-In; Apple Sign in with Apple; Google AdMob/UMP and disclosed ad partners; and GitHub for public support. They may process data outside your country under their safeguards. Settings -> Delete Account removes the Firebase account and clears the account's local play coins and local best; Apple authorization revocation is included in the Apple path. Other device preferences may remain until app data is removed. Analytics, crash and ad records follow provider retention and legal obligations and may not be directly linked to the deleted account. App deletion or sign-out alone does not delete the server account. Deleting this app account does not delete your Apple or Google account."},
+            {"heading": "Contact and audience", "body": "This is a general-audience puzzle game, not specifically directed to children. Use the support link for privacy or deletion problems without posting identifying account data publicly. Public support issues remain until removed by their author, GitHub or an administrator. Material changes will update this policy's date."}
+          ],
+          "ko": [
+            {"heading": "범위와 날짜", "body": "2026년 10월 7일 갱신한 Mirror Fold 개인정보처리방침입니다. Duskore의 출시 준비 중인 iOS 퍼즐 앱에 적용됩니다. 지원 웹사이트에는 앱 분석·광고 스크립트가 없으며 GitHub 호스팅과 공개 이슈에는 GitHub 방침이 적용됩니다. 방침 게시는 출시 준비 완료를 의미하지 않습니다."},
+            {"heading": "인증과 기기 내 데이터", "body": "Firebase Authentication은 게스트·Google·Apple 로그인에 계정 식별자와 제공자 정보를 처리합니다. 제공자는 사용자 허가에 따라 이메일·이름·프로필 정보를 제공할 수 있습니다. 게스트도 익명 Firebase 계정을 만듭니다. 플레이 코인, 최고점, 테마와 사운드 설정은 기기에 저장합니다. 코인은 구매 상품이나 금전 가치가 있는 통화가 아닙니다. 이 버전에는 점수 클라우드 백업이나 Game Center 공유가 없습니다."},
+            {"heading": "분석과 진단", "body": "Firebase Analytics는 이용 분석을 위해 앱 세션, 게임 이벤트, 설치 식별자, 앱·기기·OS 정보, 언어와 대략적 지역을 처리할 수 있습니다. Crashlytics는 오류 분석을 위해 충돌 내용, 설치 식별자, 시각, 기기·OS와 앱 버전을 처리할 수 있습니다. Analytics의 광고 저장·광고 사용자 데이터·광고 개인화 신호는 별도로 거부되며 AdMob 권한 허용으로 활성화되지 않습니다. 인증·분석·진단은 광고 추적 허가와 구분됩니다."},
+            {"heading": "광고와 선택", "body": "AdMob·UMP가 하단 배너와 선택형 보상 광고를 제공합니다. iOS에서는 추적 허가 후 지역별 동의 절차와 광고 요청 가능 여부를 확인합니다. 광고 제공자는 기기·광고 식별자, 대략적 위치, 광고 상호작용과 진단 데이터를 처리할 수 있으며 해당 허가가 있는 경우 다른 회사의 앱·웹사이트 정보와 결합해 광고 측정·개인화에 사용할 수 있습니다. 지역별 선택에는 현지법상 판매·공유로 보는 처리가 포함될 수 있습니다. 추적을 거부해도 보유 코인으로 플레이할 수 있고 PRIVACY CHOICES 또는 시스템 설정에서 선택을 다시 확인할 수 있습니다."},
+            {"heading": "제공자·보관·삭제", "body": "Google Firebase Authentication·Analytics·Crashlytics, Google 로그인, Apple 로그인, Google AdMob·UMP와 공개된 광고 파트너, 공개 지원의 GitHub를 사용합니다. 제공자는 보호 조치에 따라 거주 국가 밖에서 정보를 처리할 수 있습니다. Settings -> Delete Account는 Firebase 계정과 해당 계정의 기기 내 코인·최고점을 정리하며 Apple 경로는 앱 승인 철회를 포함합니다. 기타 기기 설정은 앱 데이터 삭제 전까지 남을 수 있습니다. 분석·진단·광고 기록은 제공자의 보관 정책과 법적 의무를 따르며 삭제 계정과 직접 연결되지 않을 수 있습니다. 앱 제거·로그아웃만으로 서버 계정은 삭제되지 않으며 앱 계정 삭제는 Apple·Google 계정 삭제가 아닙니다."},
+            {"heading": "문의와 이용 대상", "body": "어린이를 특정 대상으로 하지 않는 일반 이용자용 퍼즐 게임입니다. 개인정보·삭제 문제는 지원 링크로 문의하되 계정 식별 정보를 공개하지 마세요. 공개 이슈는 작성자·GitHub·관리자가 삭제할 때까지 남습니다. 중요한 변경은 방침 날짜를 갱신해 반영합니다."}
+          ]
+        }
+      }
+    },
+    {
       "slug": "hexa-merge",
       "status": "available",
       "image": "/assets/games/hexa-merge.png",

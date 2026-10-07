@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://duskore.github.io/</loc></url>
+  <url><loc>https://duskore.github.io/games/mirror-fold/</loc></url>
+  <url><loc>https://duskore.github.io/games/mirror-fold/support/</loc></url>
+  <url><loc>https://duskore.github.io/games/mirror-fold/privacy/</loc></url>
   <url><loc>https://duskore.github.io/games/hexa-merge/</loc></url>
   <url><loc>https://duskore.github.io/games/star-jumper/</loc></url>
   <url><loc>https://duskore.github.io/games/star-jumper/support/</loc></url>
@@ -17,6 +20,9 @@
   <url><loc>https://duskore.github.io/support/</loc></url>
   <url><loc>https://duskore.github.io/privacy/</loc></url>
   <url><loc>https://duskore.github.io/ko/</loc></url>
+  <url><loc>https://duskore.github.io/ko/games/mirror-fold/</loc></url>
+  <url><loc>https://duskore.github.io/ko/games/mirror-fold/support/</loc></url>
+  <url><loc>https://duskore.github.io/ko/games/mirror-fold/privacy/</loc></url>
   <url><loc>https://duskore.github.io/ko/games/hexa-merge/</loc></url>
   <url><loc>https://duskore.github.io/ko/games/star-jumper/</loc></url>
   <url><loc>https://duskore.github.io/ko/games/star-jumper/support/</loc></url>

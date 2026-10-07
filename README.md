@@ -22,6 +22,12 @@ privacy pages, without a download claim. App Store availability varies by
 region. A development listing is not an announcement of a release date or a
 claim that a game has passed App Review.
 
+Mirror Fold was added as a development-only game on 2026-10-07, with its own
+English/Korean support and privacy pages. It has no public download link yet.
+Its generated icon provenance is recorded in VibeGameLab at
+`apps/mirror_fold/assets/source/ICON_SOURCE.md`; BGM listening and device QA
+remain release gates, not website publication claims.
+
 ## Edit, build and check
 
 Use Node.js 22 or later. No `npm install` is needed.
