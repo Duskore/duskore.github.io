@@ -28,6 +28,11 @@ Its generated icon provenance is recorded in VibeGameLab at
 `apps/mirror_fold/assets/source/ICON_SOURCE.md`; BGM listening and device QA
 remain release gates, not website publication claims.
 
+Converge was added as a development-only game on 2026-10-14, with dedicated
+English/Korean support and privacy pages. Its icon provenance is in VibeGameLab
+`apps/converge/assets/source/ICON_SOURCE.md`. It has no public download link;
+service, signed-build and device validation are separate release gates.
+
 ## Edit, build and check
 
 Use Node.js 22 or later. No `npm install` is needed.
