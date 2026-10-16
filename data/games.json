@@ -54,7 +54,7 @@
             },
             {
               "heading": "Sound and reports",
-              "body": "Shared sound controls manage effects and background music. Internal build1 has effects only; a dedicated music update is being prepared for internal listening QA. This is not an App Store availability announcement. For a bug, include the game name, exact version/build, device, OS and reproduction steps. Never post passwords, tokens or private screenshots."
+              "body": "Shared sound controls manage effects and the game-specific Magnetic Bloom background music included in the release candidate. This is not an App Store availability announcement. For a bug, include the game name, exact version/build, device, OS and reproduction steps. Never post passwords, tokens or private screenshots."
             }
           ],
           "ko": [
@@ -76,7 +76,7 @@
             },
             {
               "heading": "사운드와 문제 신고",
-              "body": "공용 사운드 설정으로 효과음과 배경음악을 조절합니다. 내부 빌드1에는 효과음만 있으며 전용 음악을 포함한 내부 청취 검수 업데이트를 준비 중입니다. App Store 공개 안내는 아닙니다. 오류 신고에는 게임명, 정확한 버전·빌드, 기기, OS와 재현 방법을 적고 비밀번호·토큰·개인 화면은 게시하지 마세요."
+              "body": "공용 사운드 설정으로 효과음과 출시 후보에 포함된 게임 전용 배경음악 Magnetic Bloom을 조절합니다. App Store 공개 안내는 아닙니다. 오류 신고에는 게임명, 정확한 버전·빌드, 기기, OS와 재현 방법을 적고 비밀번호·토큰·개인 화면은 게시하지 마세요."
             }
           ]
         },
@@ -993,7 +993,7 @@
             },
             {
               "heading": "Sound and reports",
-              "body": "Shared sound controls manage effects and background music. Dedicated music is being prepared for internal listening tests; this is not an App Store release announcement. For a bug, include game name, exact version/build, device, OS and reproduction steps. Never post credentials or private account data."
+              "body": "Shared sound controls manage effects and the dedicated background music included in the release candidate. This is not an App Store release announcement. For a bug, include game name, exact version/build, device, OS and reproduction steps. Never post credentials or private account data."
             }
           ],
           "ko": [
@@ -1015,7 +1015,7 @@
             },
             {
               "heading": "사운드와 문제 신고",
-              "body": "공용 사운드 설정으로 효과음과 배경음악을 조절합니다. 전용 음악은 내부 청취 테스트를 위해 준비 중이며 App Store 출시 안내가 아닙니다. 오류 신고에는 게임명, 정확한 버전·빌드, 기기, OS와 재현 방법을 적고 비밀번호·토큰·계정 개인정보는 게시하지 마세요."
+              "body": "공용 사운드 설정으로 효과음과 출시 후보에 포함된 게임 전용 배경음악을 조절합니다. App Store 출시 안내는 아닙니다. 오류 신고에는 게임명, 정확한 버전·빌드, 기기, OS와 재현 방법을 적고 비밀번호·토큰·계정 개인정보는 게시하지 마세요."
             }
           ]
         },
@@ -1128,7 +1128,7 @@
             },
             {
               "heading": "Sound and reports",
-              "body": "Shared sound controls manage effects and background music. Dedicated music is being prepared for internal listening tests; this is not an App Store release announcement. For a bug, include game name, exact version/build, device, OS and reproduction steps. Never post credentials or private account data."
+              "body": "Shared sound controls manage effects and the dedicated background music included in the release candidate. This is not an App Store release announcement. For a bug, include game name, exact version/build, device, OS and reproduction steps. Never post credentials or private account data."
             }
           ],
           "ko": [
@@ -1150,7 +1150,7 @@
             },
             {
               "heading": "사운드와 문제 신고",
-              "body": "공용 사운드 설정으로 효과음과 배경음악을 조절합니다. 전용 음악은 내부 청취 테스트를 위해 준비 중이며 App Store 출시 안내가 아닙니다. 오류 신고에는 게임명, 정확한 버전·빌드, 기기, OS와 재현 방법을 적고 비밀번호·토큰·계정 개인정보는 게시하지 마세요."
+              "body": "공용 사운드 설정으로 효과음과 출시 후보에 포함된 게임 전용 배경음악을 조절합니다. App Store 출시 안내는 아닙니다. 오류 신고에는 게임명, 정확한 버전·빌드, 기기, OS와 재현 방법을 적고 비밀번호·토큰·계정 개인정보는 게시하지 마세요."
             }
           ]
         },
