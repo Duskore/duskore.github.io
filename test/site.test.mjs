@@ -19,6 +19,21 @@ const catalog = JSON.parse(
 const pages = renderSite(catalog);
 const htmlPages = [...pages].filter(([file]) => file.endsWith(".html"));
 const clone = () => structuredClone(catalog);
+test("collection remains prerelease with distinct accounts and four score-sharing games", () => {
+  const game = catalog.games.find(game => game.slug === "duskore-games");
+  assert.equal(game.status, "development");
+  assert.equal(game.appStoreUrl, null);
+  for (const locale of ["en", "ko"]) {
+    assert.equal(game[locale].features.length, 3);
+    const copy = JSON.stringify(game.documents.privacy[locale]);
+    assert.match(copy, /com\.duskore\.games/);
+    assert.match(copy, /Game Center/);
+    assert.match(copy, /Firebase/);
+    assert.match(copy, /AdMob/);
+  }
+  assert.match(game.en.body, /not automatically imported/);
+  assert.match(JSON.stringify(game.documents.support.en), /no interstitial/);
+});
 test("restored leaderboards have current bilingual privacy and support", () => {
   for (const slug of ["stack-and-pop", "2048"]) {
     const game = catalog.games.find(game => game.slug === slug);

@@ -2,6 +2,69 @@
   "featuredSlug": "hexa-merge",
   "games": [
     {
+      "slug": "duskore-games",
+      "status": "development",
+      "image": "/assets/games/duskore-games.png",
+      "accent": "violet",
+      "appStoreUrl": null,
+      "supportUrl": "/games/duskore-games/support/",
+      "privacyUrl": "/games/duskore-games/privacy/",
+      "en": {
+        "name": "Duskore Games",
+        "genre": "Puzzle and arcade collection",
+        "tagline": "One collection. Nine ways to play.",
+        "description": "Find a favorite puzzle or a quick arcade challenge in one library.",
+        "body": "The collection brings together Hexa Merge, Sudoku, Star Jumper, Stack and Pop, 2048, Mirror Fold, Converge, Hue Stamp and Rail Shift. Search, favorites and recently played games help you return to your next challenge. Existing standalone apps remain separate; their accounts and saves are not automatically imported.",
+        "features": ["Nine distinct games in one library", "Favorites, recent games and local best scores", "Shared account, sound and theme settings"]
+      },
+      "ko": {
+        "name": "Duskore Games",
+        "genre": "퍼즐·아케이드 컬렉션",
+        "tagline": "하나의 컬렉션, 아홉 가지 플레이.",
+        "description": "하나의 라이브러리에서 좋아하는 퍼즐과 짧은 아케이드 도전을 찾으세요.",
+        "body": "Hexa Merge, Sudoku, Star Jumper, Stack and Pop, 2048, Mirror Fold, Converge, Hue Stamp, Rail Shift를 모았습니다. 검색, 즐겨찾기와 최근 플레이로 게임을 찾아보세요. 기존 개별 앱은 별도로 유지되며 해당 계정이나 저장 데이터가 자동으로 옮겨지지는 않습니다.",
+        "features": ["서로 다른 게임 9개를 하나의 라이브러리에", "즐겨찾기·최근 플레이·기기 내 최고점", "공용 계정·사운드·테마 설정"]
+      },
+      "documents": {
+        "support": {
+          "en": [
+            {"heading": "Prerelease support", "body": "Duskore Games is in development. These pages do not announce App Store approval or TestFlight availability. For help, include the game name, exact app version/build, device, OS and steps. Public GitHub issues must not contain passwords, tokens, email addresses or private screenshots."},
+            {"heading": "Library and play", "body": "Sign in, choose a game from the library and tap PLAY. HOME ends the current run and returns to that game's menu. MORE GAMES returns to the collection library. Settings are available from menus, not over the playing area. Each game retains its own rules, local progress and music."},
+            {"heading": "Coins and advertising", "body": "Each game provides five daily play coins; starting a run uses one. When permitted and available, completing an optional rewarded ad grants one coin for that game. Bottom banners may appear; no interstitial ads are used. If an ad is unavailable no reward is fabricated. Declining tracking does not block playing with available coins."},
+            {"heading": "Account and data", "body": "Guest, Google and Apple sign-in share one collection account. Guest also creates an anonymous Firebase account. Settings provides sign-out and Delete Account. Deletion applies to the collection account and its local game data, not accounts in standalone apps or your Apple/Google account. Successful deletion returns to login without starting provider sign-in automatically. If local cleanup reports a failure, do not assume deletion of local data has finished; contact support. Uninstalling or signing out does not delete the server account."},
+            {"heading": "Sound, scores and privacy", "body": "Shared controls manage music and effects; the library is silent and each game has its own track. Supported Game Center leaderboards require separate sharing permission and Game Center authentication. Other scores stay local. PRIVACY CHOICES revisits available regional ad choices; tracking permission is managed in iOS Settings. New-build device validation is separate from these instructions."}
+          ],
+          "ko": [
+            {"heading": "출시 전 지원", "body": "Duskore Games는 개발 중입니다. 이 페이지는 App Store 승인이나 TestFlight 배포 완료를 뜻하지 않습니다. 문의 시 게임명, 정확한 버전·빌드, 기기, OS, 재현 방법을 알려주세요. 공개 GitHub 이슈에 비밀번호·토큰·이메일·개인 화면을 올리지 마세요."},
+            {"heading": "라이브러리와 플레이", "body": "로그인 후 라이브러리에서 게임을 골라 PLAY를 누르세요. HOME은 현재 판을 종료하고 해당 게임 메뉴로, MORE GAMES는 통합 라이브러리로 돌아갑니다. 설정은 플레이 화면을 덮지 않고 메뉴에서 제공합니다. 규칙·기기 내 진행·음악은 게임마다 구분됩니다."},
+            {"heading": "코인과 광고", "body": "게임마다 하루 플레이 코인 5개를 제공하며 새 판에 1개를 사용합니다. 광고가 허용되고 제공 가능한 경우 선택형 보상 광고 완료 후 해당 게임의 코인 1개를 받습니다. 하단 배너만 추가로 사용하며 전면 광고는 없습니다. 광고가 없으면 보상이 임의로 지급되지 않습니다. 추적을 거부해도 보유 코인으로 플레이할 수 있습니다."},
+            {"heading": "계정과 데이터", "body": "게스트·Google·Apple 로그인은 하나의 컬렉션 계정으로 사용합니다. 게스트도 익명 Firebase 계정을 만듭니다. 설정에서 로그아웃과 Delete Account를 제공합니다. 삭제 대상은 컬렉션 계정과 기기 내 게임 데이터이며 기존 개별 앱이나 Apple·Google 계정은 아닙니다. 성공 후 제공자 로그인을 자동으로 열지 않고 로그인 화면으로 돌아갑니다. 기기 내 정리 실패가 표시되면 로컬 삭제 완료로 간주하지 말고 지원을 요청하세요. 앱 제거·로그아웃만으로 서버 계정은 삭제되지 않습니다."},
+            {"heading": "사운드·점수·개인정보", "body": "공용 설정으로 배경음악과 효과음을 조절하며 라이브러리는 무음, 게임은 전용 음악을 사용합니다. 지원되는 Game Center 순위표에는 별도 공유 동의와 Game Center 인증이 필요합니다. 그 외 점수는 기기에 저장됩니다. PRIVACY CHOICES에서 제공되는 지역별 광고 선택을 확인하고 추적 권한은 iOS 설정에서 변경하세요. 새 빌드의 실기기 검증은 이 안내와 별개입니다."}
+          ]
+        },
+        "privacy": {
+          "en": [
+            {"heading": "Scope and date", "body": "Updated October 17, 2026. This policy covers the prerelease Duskore Games iOS collection (com.duskore.games), including its nine embedded games. Existing standalone apps have separate accounts, data and policies. The support website has no app analytics or advertising scripts; GitHub's hosting and public-issue policies also apply."},
+            {"heading": "Accounts and local information", "body": "Firebase Authentication and Google/Apple sign-in process account identifiers and provider information; authorized providers may supply email, name or profile details. Guest access uses an anonymous Firebase account. Favorites, recent games, scores, play coins, game state and settings are stored on the device. Coins are not purchases or currency. Existing standalone accounts/saves are not automatically migrated and no cloud save backup is promised."},
+            {"heading": "Scores and sharing", "body": "Hexa Merge, Star Jumper, Stack and Pop and 2048 can use Apple Game Center after authentication and explicit score-sharing consent. Submitted scores and Game Center player information follow Apple's service rules. Declining sharing prevents score submission. Other games use local scores. Deleting the Firebase collection account does not delete the Apple Game Center account or necessarily remove previously submitted Game Center records."},
+            {"heading": "Analytics and diagnostics", "body": "Firebase Analytics may process app/game events, installation identifiers, device/OS/app information, language and approximate region. Crashlytics may process crash information, installation identifiers and device/OS/app details. Analytics advertising storage, advertising user data and advertising personalization are separately denied by default and do not become enabled through AdMob consent."},
+            {"heading": "Ads and choices", "body": "Google AdMob and UMP support bottom banners and optional rewarded ads. This implementation checks iOS tracking permission and regional consent before requesting ads. Advertising partners may process device/advertising identifiers, approximate location, ad interactions and diagnostics; with applicable permission information may be combined across other companies' apps and websites for measurement or personalization. Regional choices may address processing considered sale or sharing. You may decline tracking and continue with available coins. PRIVACY CHOICES and iOS Settings provide ways to revisit available choices."},
+            {"heading": "Retention and deletion", "body": "Settings - Delete Account requests Firebase account deletion and cleanup of collection-local data, including unopened games; the Apple path includes authorization revocation. Provider cancellation or errors do not count as success. Local storage failure may require further cleanup and support. Sign-out or uninstall alone does not delete a server account. Analytics, diagnostic, advertising and Game Center records follow provider retention and legal requirements and may not be directly linked to the deleted Firebase account. No deletion of standalone-app accounts or your Apple/Google account is implied."},
+            {"heading": "Providers and contact", "body": "Services include Firebase Authentication/Analytics/Crashlytics, Google and Apple sign-in, Apple Game Center, AdMob/UMP and disclosed advertising partners, and GitHub for public support. Providers may process data internationally under their safeguards. This is a general-audience collection, not specifically directed to children. Contact support for privacy questions without posting identifying data publicly. Public issues remain until removed by their author, GitHub or an administrator. Material changes update this policy's date."}
+          ],
+          "ko": [
+            {"heading": "범위와 날짜", "body": "2026년 10월 17일 갱신. 출시 준비 중인 Duskore Games iOS 컬렉션(com.duskore.games)과 내장 게임 9개에 적용됩니다. 기존 개별 앱은 계정·데이터·방침이 별도입니다. 지원 웹사이트에는 앱 분석·광고 스크립트가 없고 GitHub 호스팅·공개 이슈 방침도 적용됩니다."},
+            {"heading": "계정과 기기 내 정보", "body": "Firebase Authentication과 Google·Apple 로그인은 계정 식별자와 제공자 정보를 처리하며 허가에 따라 이메일·이름·프로필을 제공받을 수 있습니다. 게스트는 익명 Firebase 계정을 사용합니다. 즐겨찾기·최근 게임·점수·플레이 코인·게임 상태·설정은 기기에 저장합니다. 코인은 구매 상품이나 금전 가치가 있는 통화가 아닙니다. 기존 개별 앱 계정·저장 데이터는 자동 이전하지 않으며 클라우드 저장 복원을 보장하지 않습니다."},
+            {"heading": "점수와 공유", "body": "Hexa Merge·Star Jumper·Stack and Pop·2048은 Game Center 인증과 명시적 점수 공유 동의 후 Apple Game Center를 사용할 수 있습니다. 제출 점수와 Game Center 플레이어 정보에는 Apple 서비스 규칙이 적용됩니다. 공유 거부 시 점수를 전송하지 않습니다. 다른 게임 점수는 기기에 저장합니다. Firebase 컬렉션 계정 삭제는 Apple Game Center 계정 삭제가 아니며 이미 제출된 Game Center 기록까지 반드시 지우지는 않습니다."},
+            {"heading": "분석과 진단", "body": "Firebase Analytics는 앱·게임 이벤트, 설치 식별자, 기기·OS·앱 정보, 언어와 대략적 지역을 처리할 수 있습니다. Crashlytics는 충돌 정보, 설치 식별자와 기기·OS·앱 정보를 처리할 수 있습니다. Analytics의 광고 저장·광고 사용자 데이터·광고 개인화는 별도로 기본 거부되며 AdMob 동의로 활성화되지 않습니다."},
+            {"heading": "광고와 선택", "body": "Google AdMob·UMP를 통해 하단 배너와 선택형 보상 광고를 제공합니다. 현재 구현은 iOS 추적 권한과 지역별 동의 상태 확인 후 광고를 요청합니다. 광고 파트너는 기기·광고 식별자, 대략적 위치, 광고 상호작용과 진단 정보를 처리할 수 있으며 해당 허가가 있는 경우 다른 회사의 앱·웹사이트 정보와 결합해 측정·개인화할 수 있습니다. 지역별 선택에는 현지법상 판매·공유로 보는 처리가 포함될 수 있습니다. 추적을 거부해도 보유 코인으로 플레이할 수 있고 PRIVACY CHOICES·iOS 설정에서 가능한 선택을 다시 확인할 수 있습니다."},
+            {"heading": "보관과 삭제", "body": "Settings - Delete Account는 Firebase 계정 삭제와 아직 열지 않은 게임을 포함한 컬렉션 로컬 데이터 정리를 요청하며 Apple 경로는 승인 철회를 포함합니다. 인증 취소·오류는 성공이 아닙니다. 로컬 저장 실패 시 추가 정리와 지원이 필요할 수 있습니다. 로그아웃·앱 제거만으로 서버 계정은 삭제되지 않습니다. 분석·진단·광고·Game Center 기록은 제공자 보관 정책과 법적 의무를 따르며 삭제한 Firebase 계정과 직접 연결되지 않을 수 있습니다. 기존 개별 앱이나 Apple·Google 계정까지 삭제되는 것은 아닙니다."},
+            {"heading": "제공자와 문의", "body": "Firebase Authentication·Analytics·Crashlytics, Google·Apple 로그인, Apple Game Center, AdMob·UMP와 공개된 광고 파트너, 공개 지원의 GitHub를 사용합니다. 제공자는 보호 조치에 따라 해외에서 정보를 처리할 수 있습니다. 어린이를 특정 대상으로 하지 않는 일반 이용자용 컬렉션입니다. 개인정보 문의 시 계정 식별 정보를 공개하지 마세요. 공개 이슈는 작성자·GitHub·관리자가 삭제할 때까지 남습니다. 중요한 변경은 방침 날짜를 갱신합니다."}
+          ]
+        }
+      }
+    },
+    {
       "slug": "converge",
       "status": "development",
       "image": "/assets/games/converge.png",

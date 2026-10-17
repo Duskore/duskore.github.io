@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://duskore.github.io/</loc></url>
+  <url><loc>https://duskore.github.io/games/duskore-games/</loc></url>
+  <url><loc>https://duskore.github.io/games/duskore-games/support/</loc></url>
+  <url><loc>https://duskore.github.io/games/duskore-games/privacy/</loc></url>
   <url><loc>https://duskore.github.io/games/converge/</loc></url>
   <url><loc>https://duskore.github.io/games/converge/support/</loc></url>
   <url><loc>https://duskore.github.io/games/converge/privacy/</loc></url>
@@ -29,6 +32,9 @@
   <url><loc>https://duskore.github.io/support/</loc></url>
   <url><loc>https://duskore.github.io/privacy/</loc></url>
   <url><loc>https://duskore.github.io/ko/</loc></url>
+  <url><loc>https://duskore.github.io/ko/games/duskore-games/</loc></url>
+  <url><loc>https://duskore.github.io/ko/games/duskore-games/support/</loc></url>
+  <url><loc>https://duskore.github.io/ko/games/duskore-games/privacy/</loc></url>
   <url><loc>https://duskore.github.io/ko/games/converge/</loc></url>
   <url><loc>https://duskore.github.io/ko/games/converge/support/</loc></url>
   <url><loc>https://duskore.github.io/ko/games/converge/privacy/</loc></url>
