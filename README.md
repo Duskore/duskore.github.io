@@ -33,6 +33,13 @@ English/Korean support and privacy pages. Its icon provenance is in VibeGameLab
 `apps/converge/assets/source/ICON_SOURCE.md`. It has no public download link;
 service, signed-build and device validation are separate release gates.
 
+Same Day Appraiser (같은 날의 감정사) was added as a development-only game on
+2026-11-11, with English/Korean introductions, support and privacy pages. It is
+an offline Korean-language appraisal puzzle with local saves and no accounts,
+ads or analytics; there is no public download link. The 512px website icon is
+a downscaled copy of the game’s existing `game/assets/app_icon/icon_1024.png`.
+Website publication and App Store approval remain separate steps.
+
 ## Edit, build and check
 
 Use Node.js 22 or later. No `npm install` is needed.

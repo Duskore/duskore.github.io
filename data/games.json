@@ -1272,6 +1272,141 @@
           ]
         }
       }
+    },
+    {
+      "slug": "same-day-appraiser",
+      "status": "development",
+      "image": "/assets/games/same-day-appraiser.png",
+      "accent": "orange",
+      "appStoreUrl": null,
+      "supportUrl": "/games/same-day-appraiser/support/",
+      "privacyUrl": "/games/same-day-appraiser/privacy/",
+      "en": {
+        "name": "Same Day Appraiser",
+        "genre": "Observation puzzle",
+        "tagline": "Compare the record. Stamp SAME or DIFFERENT.",
+        "description": "Appraise antiques at Yeonodang. Compare each object with the catalog, and repeat the same day if any judgment is wrong.",
+        "body": "Turn objects on a 3D desk, inspect them with a loupe, weigh them and listen to their sound. Compare the catalog’s photographs, material, color, size, weight and sound records before stamping SAME or DIFFERENT. Finish all seven days to complete the week. The game is in Korean and plays offline without accounts, ads or purchases.",
+        "features": [
+          "28 objects and 34 anomalies to examine with appraisal tools",
+          "Collect discovered anomalies and replay finished days from the calendar",
+          "Color-vision modes, 150% text, reduced motion and captions"
+        ]
+      },
+      "ko": {
+        "name": "같은 날의 감정사",
+        "genre": "관찰 퍼즐",
+        "tagline": "도록과 대조해 찍는 같음·다름 도장",
+        "description": "골동품점 연오당의 감정 사무실. 손님이 맡긴 물건을 도록과 비교하고, 하나라도 틀리면 같은 날을 다시 맞이하세요.",
+        "body": "3D 책상 위의 물건을 돌려 보고, 확대경으로 들여다보고, 저울에 올리고, 두드려 소리를 들어 보세요. 도록의 사진과 재질·색, 크기, 무게, 소리 기록과 같으면 같음, 다른 데가 하나라도 있으면 다름 도장을 찍습니다. 월요일부터 일요일까지 일곱 날을 마감하면 한 주가 끝납니다. 한국어로 즐기는 오프라인 게임이며 계정·광고·결제가 없습니다.",
+        "features": [
+          "물건 28종과 이상현상 34종, 날마다 늘어나는 감정 도구",
+          "발견한 이상현상을 모으는 감정 도감과 달력에서 마감한 날 다시 하기",
+          "색각 모드, 글자 크기 150%, 움직임 줄이기, 자막"
+        ]
+      },
+      "documents": {
+        "support": {
+          "en": [
+            {
+              "heading": "Same Day Appraiser support",
+              "body": "This page supports the Korean-language iPhone and iPad game during release preparation. It does not announce availability or App Store approval."
+            },
+            {
+              "heading": "How to play",
+              "body": "Sit at the appraisal desk and compare each customer’s object with its catalog record. Rotate the object, use the loupe, scale and measuring mat, and tap it to hear its sound. Stamp SAME if every detail matches, or DIFFERENT if any detail differs. One wrong judgment makes the same day repeat. Finish seven days to complete a week; replay finished days from the calendar."
+            },
+            {
+              "heading": "Saving",
+              "body": "Progress and settings are saved only in the app’s storage on your device. There is no cloud backup. Deleting the app deletes these saves and local judgment records."
+            },
+            {
+              "heading": "Accessibility",
+              "body": "Open Options in the office for color-vision modes, 150% text size, reduced motion and captions."
+            },
+            {
+              "heading": "Report a problem",
+              "body": "Use the public GitHub issue link below. Include the game name, exact version/build, device, OS version and steps to reproduce the problem. Do not post personal information, credentials or private files. Review screenshots before attaching them."
+            }
+          ],
+          "ko": [
+            {
+              "heading": "같은 날의 감정사 지원",
+              "body": "출시를 준비 중인 한국어 iPhone·iPad 게임의 지원 안내입니다. 앱 제공이나 App Store 승인을 뜻하지 않습니다."
+            },
+            {
+              "heading": "플레이 방법",
+              "body": "감정 책상에 앉아 손님이 맡긴 물건을 도록과 대조하세요. 물건을 돌리고 확대경·저울·측정 매트를 사용하거나 두드려 소리를 확인합니다. 기록과 모두 같으면 같음, 다른 데가 하나라도 있으면 다름 도장을 찍습니다. 하나라도 틀리면 같은 날이 반복됩니다. 일곱 날을 마감하면 한 주가 끝나며, 마감한 날은 달력에서 다시 할 수 있습니다."
+            },
+            {
+              "heading": "저장",
+              "body": "진행 상황과 설정은 기기 안 앱 저장 공간에만 저장됩니다. 클라우드 백업은 없습니다. 앱을 삭제하면 저장 내용과 기기 내 판정 기록도 사라집니다."
+            },
+            {
+              "heading": "접근성",
+              "body": "사무실의 옵션에서 색각 모드, 글자 크기 150%, 움직임 줄이기, 자막을 설정할 수 있습니다."
+            },
+            {
+              "heading": "문제 신고",
+              "body": "아래 공개 GitHub 이슈 링크를 이용하세요. 게임명, 정확한 버전·빌드, 기기, OS 버전, 재현 단계를 적어 주세요. 개인정보·비밀번호·비공개 파일을 게시하지 말고 첨부할 스크린샷도 먼저 확인해 주세요."
+            }
+          ]
+        },
+        "privacy": {
+          "en": [
+            {
+              "heading": "Scope and date",
+              "body": "Same Day Appraiser privacy policy. Updated 2026-11-11. This policy applies to Duskore’s offline iPhone and iPad game."
+            },
+            {
+              "heading": "No personal data collection",
+              "body": "The app has no accounts, login, advertising, analytics, crash reporting or network requests. It does not collect personal information or track users."
+            },
+            {
+              "heading": "Data stored on your device",
+              "body": "Progress, settings and judgment records are written only to the app’s storage on your device. Judgment records are gameplay CSV files containing details such as the day, item, stamp and elapsed time. These files are not sent anywhere. There is no cloud backup, and deleting the app deletes this local data."
+            },
+            {
+              "heading": "License links",
+              "body": "License links in Credits open in the system browser only when you choose to tap them. The linked websites follow their own policies."
+            },
+            {
+              "heading": "Support website",
+              "body": "This support website contains no analytics or advertising scripts. GitHub hosting and public support issues follow GitHub’s policies. Anything you post in a public issue is visible to others; do not include personal information."
+            },
+            {
+              "heading": "Audience and questions",
+              "body": "The game is for a general audience and is not specifically directed to children. For privacy questions, use the support link without posting personal information. Material policy changes will update the date above."
+            }
+          ],
+          "ko": [
+            {
+              "heading": "범위와 날짜",
+              "body": "같은 날의 감정사 개인정보 처리방침입니다. 갱신일: 2026-11-11. Duskore의 오프라인 iPhone·iPad 게임에 적용됩니다."
+            },
+            {
+              "heading": "개인정보를 수집하지 않습니다",
+              "body": "앱에는 계정·로그인·광고·분석·충돌 보고·네트워크 요청이 없습니다. 개인정보를 수집하거나 사용자를 추적하지 않습니다."
+            },
+            {
+              "heading": "기기 안에 저장하는 데이터",
+              "body": "진행 상황·설정과 판정 기록은 기기 안 앱 저장 공간에만 기록됩니다. 판정 기록은 날짜·물건·도장·걸린 시간 등의 플레이 기록 CSV입니다. 이 파일은 어디로도 보내지 않습니다. 클라우드 백업은 없으며 앱을 삭제하면 기기 내 데이터도 지워집니다."
+            },
+            {
+              "heading": "라이선스 링크",
+              "body": "크레딧의 라이선스 링크는 사용자가 누를 때만 시스템 브라우저로 엽니다. 연결된 웹사이트에는 해당 사이트의 방침이 적용됩니다."
+            },
+            {
+              "heading": "지원 웹사이트",
+              "body": "이 지원 웹사이트에는 분석·광고 스크립트가 없습니다. GitHub 호스팅과 공개 지원 이슈는 GitHub 방침을 따릅니다. 공개 이슈의 내용은 다른 사람도 볼 수 있으므로 개인정보를 게시하지 마세요."
+            },
+            {
+              "heading": "이용 대상과 문의",
+              "body": "어린이를 특정 대상으로 하지 않는 일반 이용자용 게임입니다. 개인정보 관련 문의는 개인정보를 공개하지 않고 지원 링크를 이용해 주세요. 중요한 방침 변경은 위 날짜를 갱신해 알립니다."
+            }
+          ]
+        }
+      }
     }
   ]
 }
